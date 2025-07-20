@@ -17,3 +17,10 @@ def get_privacy_policy():
 @app.route('/api/data/community_guidelines')
 def get_community_guidelines():
     return render_template('community_guidelines.html')
+
+@app.route('/api/data/report_vulnerability')
+def get_report_vulnerability():
+    return render_template('report_vulnerability.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)
